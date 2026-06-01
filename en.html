@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Monument – English</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,30 +21,39 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
-
-    p {
+    .label {
       color: #718096;
       font-size: 16px;
       margin-bottom: 20px;
     }
-
     audio {
       width: 100%;
       margin-bottom: 30px;
     }
-
+    /* Audioguide text: left-aligned and readable */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
     .btn-back {
       display: inline-block;
       text-decoration: none;
@@ -57,42 +64,36 @@
       font-weight: 600;
       transition: background 0.3s ease;
     }
-
     .btn-back:hover {
       background: #5a67d8;
     }
   </style>
 </head>
-
 <body>
-
   <div class="container">
-
     <h1>City monument</h1>
     <h2>English</h2>
-
-    <p>Audioguide:</p>
-
+    <p class="label">Audioguide:</p>
     <audio controls>
       <source src="EN_COUPOLE.mp3" type="audio/mpeg">
       Your browser does not support audio.
     </audio>
-<p>
-<br>  The former Hôtel de la Coupole is located in the very heart of Soissons, on Rue du Chaperon-Rouge, just steps from the cathedral and directly opposite the covered market.
 
-<br>Built around 1923, after the destruction of the First World War, it reflects the city’s reconstruction period. 
+    <div class="audioguide">
+      <p>The former Hôtel de la Coupole is located in the very heart of Soissons, on Rue du Chaperon-Rouge, just steps from the cathedral and directly opposite the covered market.</p>
 
-<br>The project was led by Émile Naudin, a metalworker from Soissons, and carried out by the architect Marc Solotareff, a Russian refugee following the 1917 Revolution, who settled in Soissons with his family in 1921.
+      <p>Built around 1923, after the destruction of the First World War, it reflects the city’s reconstruction period.</p>
 
-<br>The building, made of stone and zinc, with brick at the rear, adopts a neo-Renaissance style combined with Art Deco motifs and materials. Its features include a symmetrical façade, small round windows known as “oeil-de-boeuf” (bull’s-eye windows), and above all its two distinctive domes, which gave the building its name.
+      <p>The project was led by Émile Naudin, a metalworker from Soissons, and carried out by the architect Marc Solotareff, a Russian refugee following the 1917 Revolution, who settled in Soissons with his family in 1921.</p>
 
-<br>Over time, the site has had several uses: a shop, a brasserie, then a hotel-brasserie from 1935 onward, linked to the development of memorial tourism, and even a greengrocer’s shop.
+      <p>The building, made of stone and zinc, with brick at the rear, adopts a neo-Renaissance style combined with Art Deco motifs and materials. Its features include a symmetrical façade, small round windows known as “oeil-de-boeuf” (bull’s-eye windows), and above all its two distinctive domes, which gave the building its name.</p>
 
-<br>Today, it is privately owned and still houses shops on the ground floor.
-</p>
-    <a href="index.html" class="btn-back">← Return to the homepage.</a>
+      <p>Over time, the site has had several uses: a shop, a brasserie, then a hotel-brasserie from 1935 onward, linked to the development of memorial tourism, and even a greengrocer’s shop.</p>
 
+      <p>Today, it is privately owned and still houses shops on the ground floor.</p>
+    </div>
+
+    <a href="index.html" class="btn-back">← Return to the homepage</a>
   </div>
-
 </body>
 </html>
