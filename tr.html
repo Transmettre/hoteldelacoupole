@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="tr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anıt – Türkçe</title>
-
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,7 +12,6 @@
       margin: 0;
       padding: 20px;
     }
-
     .container {
       max-width: 600px;
       margin: 0 auto;
@@ -23,18 +21,80 @@
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
       text-align: center;
     }
-
     h1 {
       color: #2d3748;
       font-size: 28px;
       margin-bottom: 5px;
     }
-
     h2 {
       color: #667eea;
       font-size: 20px;
       margin-bottom: 25px;
     }
+    .label {
+      color: #718096;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    audio {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    /* Sesli rehber metni: sola hizalı ve okunaklı */
+    .audioguide {
+      text-align: left;
+      color: #2d3748;
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0 0 30px;
+    }
+    .audioguide p {
+      margin: 0 0 16px;
+    }
+    .audioguide p:last-child {
+      margin-bottom: 0;
+    }
+    .btn-back {
+      display: inline-block;
+      text-decoration: none;
+      background: #667eea;
+      color: white;
+      padding: 12px 30px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .btn-back:hover {
+      background: #5a67d8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Şehir anıtı</h1>
+    <h2>Türkçe</h2>
+    <p class="label">Sesli rehber:</p>
+    <audio controls>
+      <source src="audio/es.mp3" type="audio/mpeg">
+      Tarayıcınız ses dosyalarını desteklemiyor.
+    </audio>
+
+    <div class="audioguide">
+      <p>Eski Hôtel de la Coupole, Soissons’un tam kalbinde, Rue du Chaperon-Rouge caddesinde, katedralin hemen yanında ve kapalı pazarın tam karşısında yer almaktadır.</p>
+
+      <p>Birinci Dünya Savaşı’nın yol açtığı yıkımın ardından 1923 civarında inşa edilen bina, şehrin yeniden inşa dönemine tanıklık etmektedir. Proje, Soissons'lu bir çilingir ve demirci olan Émile Naudin tarafından desteklenmiş ve 1917 devriminden sonra Rusya'dan kaçarak 1921 yılında ailesiyle birlikte Soissons'a yerleşen Rus asıllı mimar Marc Solotareff tarafından gerçekleştirilmiştir.</p>
+
+      <p>Taş, çinko ve tuğladan (arka cephe için) inşa edilen bina, Art Deco motifleri ve malzemelerini harmanlayan bir neo-Rönesans tarzını benimsemiştir. Binada simetrik bir cephe, “boğa gözü” olarak adlandırılan küçük yuvarlak pencereler ve özellikle de binaya adını veren iki karakteristik kubbe göze çarpmaktadır.</p>
+
+      <p>Zaman içinde bu mekân çeşitli işlevlere ev sahipliği yapmıştır: dükkân, bira evi, ardından 1935'ten itibaren anı turizminin gelişmesiyle birlikte otel-bira evi ve hatta manav dükkânı.</p>
+
+      <p>Günümüzde özel mülkiyete ait olan binanın zemin katında hâlâ dükkânlar yer almaktadır.</p>
+    </div>
+
+    <a href="index.html" class="btn-back">← Resepsiyona dön</a>
+  </div>
+</body>
+</html>    }
 
     p {
       color: #718096;
